@@ -1,19 +1,24 @@
 h1 {
-    font-size: 100px;
-    font-family: 'Courier New', Courier, monospace;
-    color: white;
-    text-align: center;
-    
-    }
+  font-size: 100px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+  
+}
 
 body {
-    background-color: #2F2FA2;
+  background-color: #2F2FA2;
 }
 
 button {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    margin: 10px 20px 10px 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 20px 10px 20px;
+}
+
+fieldset > input, textarea {
+  background-color: #99738e; 
+  border-color: #99738e;
 }
