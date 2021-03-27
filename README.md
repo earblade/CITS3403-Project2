@@ -5,6 +5,7 @@ Creating a webpage to teach others how to use React
 
 <h2>Timeline</h2>
 - Frontend Design [Deadline 31/3/2021]
+- Please refer to the *Projects* tab to see what actions need to be done still
 
 <h3>Setup Instructions</h3>
 - Uses Bootstrap version 4.6
