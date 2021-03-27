@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
 <html lang="en">
 
 <!-- Required meta tags -->
@@ -25,32 +26,39 @@
 <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
 
 <head>
-  <title>Learn React</title>
+    <title>Sign Up</title>
 
+    <nav class="navbar">
 
-  <!-- Nav placed here -->
-  <nav class="navbar">
-
-    <a class="navbar-brand" href="#">
-      <img src="/reactnativeLogo.png" width="40" height="35" class="d-inline-block align-top" alt="">
-    </a>
-    <button class="btn btn-outline-success" type="button" onclick="location.href='signupForm.html';" >Sign up</button>
-
-  </nav>
-
+        <a class="navbar-brand" href="#">
+          <img src="/reactnativeLogo.png" width="40" height="35" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="btn btn-outline-success" disabled type="button" onclick="location.href='signupForm.html';" >Sign up</button>
+    
+    </nav>
 
 </head>
 
 <body>
-  <h1>Learn React</h1>
 
-  <button>Part 1</button>
-  <button>Part 2</button>
-  <button>Part 3</button>
-  <button>Part 4</button>
-  <button>Part 5</button>
+    <h1>Sign Up</h1>
+
+    <form class="FormTitleText" action="/action_page.php">
+        <fieldset>
+            <legend>Personal information:</legend>
+            Username:<br>
+            <input type="text" name="username" value = "John">
+            <br>
+            Email:<br>
+            <input type="text" name="lastname" value="">
+            <br>
+            date of birth:<br>
+            <input type="text" name="lastname" value="">
+            <br><br>
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
 </body>
-
 
 
 
