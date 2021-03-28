@@ -22,3 +22,13 @@ fieldset > input, textarea {
   background-color: #99738e; 
   border-color: #99738e;
 }
+
+navbar-button-alignment {
+  float: right;
+  font-size: 100px;
+  background-color: aquamarine;
+}
+
+ul {
+  list-style-type: none;
+}
