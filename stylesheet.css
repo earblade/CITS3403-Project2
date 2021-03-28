@@ -32,3 +32,7 @@ navbar-button-alignment {
 ul {
   list-style-type: none;
 }
+
+p {
+  color: white;
+}
