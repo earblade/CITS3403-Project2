@@ -29,7 +29,8 @@ navbar-button-alignment {
   background-color: aquamarine;
 }
 
-ul {
+li {
+  /* Removed list dot */
   list-style-type: none;
 }
 
