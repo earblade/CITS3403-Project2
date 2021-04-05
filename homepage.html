@@ -51,11 +51,46 @@
 
 <body>
 
-  <video width="100%" height="100%" autoplay loop>
-    <source src="/homepagevid.mp4" type="video/mp4">
-  </video>
+  <!-- <video width="100%" height="100%" autoplay loop>
+    <source src="/Videos/vid1-homepage.mp4" type="video/mp4">
+  </video> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="playback.js"></script>
+  <div id="border">
+    <video id="video1"width="100%" height="100%" hidden>
+              <source type="video/mp4">
+              Your browser does not support playing this Video
+          </video>
+    <video id="video2" width="640" height="360" hidden>
+              <source type="video/mp4">
+              Your browser does not support playing this Video
+          </video>
+    <video id="video3" width="640" height="360" hidden>
+              <source type="video/mp4">
+              Your browser does not support playing this Video
+          </video>
+    <div>
+      <canvas id="myCanvas" width="640" height="360"> </canvas>
+    </div>
+    <div role="controls">
+      <div>
+        <label>
+             Times the middle video will repeat itself:
+        </label>
+      </div>
+      <div>
+        <input id="playbackNum" value="1" />
+      </div>
+      <p>
+        <button id="startPlayback">Start</button>
+      </p>
+    </div>
+  </div>
+  
 
 </body>
+
+
 
 <body>
   <h2>Why learn React?</h2>
