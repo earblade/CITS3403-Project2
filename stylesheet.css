@@ -50,3 +50,17 @@ p {
   width:min-content;
   margin-top: 1000px;
 }
+
+.card-spacing {
+  margin: 30px 30px 30px 30px;
+  
+}
+
+.card-text-black {
+  color:black;
+  font-size: medium;
+}
+
+article {
+  background-color: white;
+}
