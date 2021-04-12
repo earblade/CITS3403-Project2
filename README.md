@@ -19,6 +19,10 @@ Creating a webpage to teach others how to use React
   
   Please refer to https://getbootstrap.com/docs/4.6/getting-started/introduction/
 
+### Libraries
+- https://animate.style/
+
+
 ### Theme
 
 ![Theme Format](https://visme.co/blog/wp-content/uploads/2016/09/website2-1024x512.jpg)
