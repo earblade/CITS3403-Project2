@@ -1,0 +1,13 @@
+Plan: Ethan - Homepage website theme and  visuals
+        Tyler - login sign up page, helping Ehsan
+        Ehsan - learning content (in txt editor)
+
+
+1. (navbar ajax)
+- teaching content in modular form ( W3 school layout )
+
+
+2. test at end with multichoice
+
+
+
