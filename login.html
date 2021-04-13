@@ -69,45 +69,41 @@
 </head>
 
 <body>
-  
-  <h1 style="padding-bottom: 5rem;">Login</h1>
-  
   <div class="container">
-    <div class="border-login">
-      <form class="FormTitleText" action="/action_page.php">
-        <legend>
-          <em><strong>Personal information</strong></em>
-        </legend>
+    <div id="signup" class="border-login">
+      <form class="" action="/action_page.php">
+        <div class="header">
+          
+          <legend style="text-align:left;display:inline;">
+            <strong>Login</strong>
+          </legend>
+          
+          <span class="sml-info">Need to sign up? <span style="margin-left: 10px;"><a href="signup.html">Sign up</a></span></span>
+        
+        </div>
         <fieldset>
-          <div class="center-div">
-            <label for="uname"><strong>Username:</strong></label>
-            
-            <br /><br />
             <input
-              class="rounded-bottom"
+              class=""
+              placeholder="username"
               type="text"
               name="username"
               id="uname"
             />
-            <br />
-            <label for="email"><strong>Email:</strong></label>
-            <br /><br />
             <input
-              class="rounded-bottom"
+              class=""
+              placeholder="email"
               type="text"
               name="lastname"
               id="email"
             />
-            <br />
             <input
-              class="rounded-bottom"
+              class="submit-button"
               type="submit"
               value="Submit"
               id="submit-button"
             />
-            <br><br>
-            <span class="sml-info">Need to sign up? <span style="margin-left: 10px;"><a href="signup.html">Sign up</a></span></span>
-          </div>
+            <br>
+            
         </fieldset>
       </form>
     </div>
