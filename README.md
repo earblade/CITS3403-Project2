@@ -10,7 +10,7 @@ Creating a webpage to teach others how to use React
   - blah
 - part 4
   - blah
-kjlkjlkjlkjk
+
 ### Timeline
 - Please refer to the *Projects* tab to see what actions need to be done still
 
