@@ -9,5 +9,3 @@ Plan: Ethan - Homepage website theme and  visuals
 
 2. test at end with multichoice
 
-
-
