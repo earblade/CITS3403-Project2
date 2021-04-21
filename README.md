@@ -25,6 +25,4 @@ Creating a webpage to teach others how to use React
 
 ### Theme
 
-![Theme Format](https://visme.co/blog/wp-content/uploads/2016/09/website2-1024x512.jpg)
-
 [Login Design](https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com)
