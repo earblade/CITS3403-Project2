@@ -3,13 +3,13 @@ Creating a webpage to teach others how to use React
 
 ### Tutorial Structure 
 - part1
-  - blah
+  - Setup
 - part 2
-  - blah
+  - Positioning
 - part 3
-  - blah
+  - Animation
 - part 4
-  - blah
+  - Misc
 
 ### Timeline
 - Please refer to the *Projects* tab to see what actions need to be done still
