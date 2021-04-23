@@ -4,14 +4,14 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 
-@app.route('/home')
+@app.route('/')
 def home():
-    return render_template('/flaskFiles/homepage.html')
+    return render_template('homepage.html')
 
 
 @app.route('/about')
 def about():
-    return render_template('flaskFiles/about.html')
+    return render_template('about.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -26,7 +26,7 @@ def login():
         else:
             return redirect(url_for('home'))
 
-    return render_template('flaskFiles/login.html', error=error)
+    return render_template('login.html', error=error)
 
 
 if __name__ == '__main__':
