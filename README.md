@@ -1,6 +1,24 @@
 # CITS3403-Project2
 
+### Marked on
+
+1. the purpose of the web application, explaining both the context and the assessment mechanism used.
+2. the architecture of the web application.
+3. describe how to launch the web application.
+4. describe some unit tests for the web application, and how to run them.
+5. Include commit logs, showing contributions and review from both contributing students
+
 Creating a webpage to teach others how to use React
+
+1. The website should have at least six pages/sections:
+2. one promoting the theme and purpose to users;
+3. a registration/login page for new or returning users;
+4. one or more pages presenting content to users;
+5. one or more pages for users to complete assessments;
+6. one page giving feedback to the user;
+7. one page showing aggregate results and usage statsitics
+
+Add encryption in password on flask
 
 ### Setup
 
