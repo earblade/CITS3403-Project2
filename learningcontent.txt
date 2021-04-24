@@ -1,6 +1,6 @@
 Plan: Ethan - Homepage website theme and  visuals
         Tyler - login sign up page, helping Ehsan
-        Ehsan - learning content (in txt editor)
+        Ehsan - learning content (in txt editor) by 25th (html,css and content)
 
 
 1. (navbar ajax)
