@@ -1,4 +1,4 @@
-.centre {
-    text-align: center;
-    text-decoration-color: lightblue;
+body {
+    align-items: center;
+    color: lightblue;
 }
