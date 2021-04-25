@@ -20,11 +20,13 @@ Creating a webpage to teach others how to use React
 
 Add encryption in password on flask
 
+---
+
 ### Setup
 
 Note: Python needs to be installed in system with correct path
 
-Windows
+<b>Windows</b>
 
 1. venv/Scripts/activate
 2. cd flaskFiles
@@ -36,6 +38,34 @@ Windows
 7. deactivate
 
 Note: clear cache & cookies might come in handy when debugging
+
+<b>Linux</b>
+
+1. Activate the virtual environment
+
+  `source venv/bin/activate`
+  
+2. Go into the flask dir 
+  
+  `cd flaskFiles`
+  
+3. Install neccessary libraries from 
+  
+  `pip3 install -r requirements.txt`
+  
+4. Check the current FLASK_APP environment variable with
+  
+  `echo $FLASK_APP`
+  
+5. If it returns with `app`, skip this step, otherwise type in 
+  
+  `export FLASK_APP="app"`
+  
+6. Run the server with 
+  
+  `flask run`
+
+---
 
 ### Tutorial Structure
 
