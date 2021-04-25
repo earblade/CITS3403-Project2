@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#github folders/files to ignore
+workspace.code-workspace
+
 # Project Specific Folders to Ignore
 
 
