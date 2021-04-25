@@ -22,7 +22,7 @@
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/stylesheet.css') }}" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}" media="screen" />
 
 <head>
   <title>Login</title>
@@ -52,11 +52,11 @@
       <form class="" action="/action_page.php" method="POST">
         <div class="header">
 
-          <legend style="text-align:left;display:inline;">
+          <legend style="text-align: left;">
             <strong>Login</strong>
           </legend>
 
-          <span class="sml-info">Need to sign up? <span style="margin-left: 10px;"><a href="signup.html">Sign
+          <span class="sml-info" style="position:absolute;right:auto;bottom:0px">Need to sign up? <span style="margin-left: 10px;"><a href="signup.html">Sign
                 up</a></span></span>
 
         </div>
