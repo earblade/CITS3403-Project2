@@ -19,7 +19,7 @@ def login():
 
     error = None
 
-    if request.methods == 'POST':
+    if request.method == 'POST':
 
         if request.form['username'] != 'ethan' or request.form['password'] != password:
             error = "Incorrect input"

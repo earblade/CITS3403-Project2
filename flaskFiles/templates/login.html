@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+<!-- <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" /> -->
 <html lang="en">
 <!-- Required meta tags -->
 <meta charset="utf-8" />
@@ -22,7 +22,7 @@
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="../static/css/stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/stylesheet.css') }}" media="screen" />
 
 <head>
   <title>Learn React</title>
@@ -30,10 +30,6 @@
   <!-- Nav placed here -->
   <nav class="navbar ">
     <a class="navbar-brand" href="homepage.html">
-      <!-- <img src="/Logo.mp4"  type="video/mp4" width="70" height="65" class="d-inline-block align-top" alt=""> -->
-      <video width="90" height="85" autoplay loop>
-        <source src="imgs/Logo.mp4" type="video/mp4">
-      </video>
     </a>
     <div class="btn-group">
       <ul class="nav navbar-nav"></ul>
@@ -52,6 +48,7 @@
 <body>
   <div class="container">
     <div id="signup" class="border-login">
+
       <form class="" action="/action_page.php" method="POST">
         <div class="header">
 
@@ -66,9 +63,12 @@
         <fieldset>
           <input class="" placeholder="Username" type="text" name="username" id="uname"
             value="{{ request.form.username }}">
+
           <input class="" placeholder="Email" type="text" name="email" id="email" value="{{ request.form.email }}">
+
           <input class="" placeholder="Password" type="password" name="password" id="password"
             value="{{ request.form.password }}">
+
           <input class="submit-button" type="submit" value="Submit" id="submit-button" />
           <br>
         </fieldset>
