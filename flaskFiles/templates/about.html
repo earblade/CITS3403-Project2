@@ -26,6 +26,10 @@
 <head>
   <title>About</title>
 </head>
+<div id="magnify">
+  <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
+  <div id="img_here"></div>
+</div>
 
 <body>
   <header id="navspacing" class="animated slideInDown" style="animation-delay:800ms; color:black">
@@ -60,8 +64,10 @@
           </form>
         </div>
       </td>
+      <td id="about_rightImage" class="animated jackInTheBox" style="animation-delay:2000ms;"></td>
     </tr>
   </table>
+  <script src="{{ url_for('static', filename='Javascript/index.js') }}" type="text/javascript"></script>
 </body>
 
 </html>

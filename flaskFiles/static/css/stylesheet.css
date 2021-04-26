@@ -179,6 +179,19 @@ header table {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#about_rightImage {
+  width: 100%;
+  height: 95vh;
+  background: linear-gradient(
+      0deg,
+      rgba(98, 116, 255, 0.7),
+      rgba(298, 116, 255, 0.7)
+    ),
+    url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1")
+      center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #work {
   width: 92vw;
   padding: 6vh 4vw;
@@ -327,6 +340,9 @@ button:focus {
     cursor: pointer;
   }
   #rightImage {
+    display: none;
+  }
+  #aboutRightImage {
     display: none;
   }
   #top_part {
