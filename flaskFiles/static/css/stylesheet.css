@@ -102,6 +102,7 @@ header table {
 #navigation a:hover {
   border-bottom: 2px solid #fff;
 }
+
 #top_part {
   width: 100%;
   border: 2vh solid #fff;
@@ -144,7 +145,7 @@ header table {
   cursor: pointer;
   color: #fff;
   background: rgb(98, 116, 255);
-  box-shadow: 0px 10px 30px rgba(255, 66, 107, 0.8);
+  box-shadow: 0px 10px 30px rgba(98, 116, 255s);
 }
 .btn_one {
   font-size: 18px;
@@ -461,4 +462,7 @@ button:focus {
 }
 .sml-info a:hover {
   color: rgb(48, 66, 200);
+}
+#navspacing {
+  margin-bottom: 30px;
 }

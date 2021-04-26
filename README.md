@@ -43,27 +43,27 @@ Note: clear cache & cookies might come in handy when debugging
 
 1. Activate the virtual environment
 
-  `source venv/bin/activate`
-  
-2. Go into the flask dir 
-  
-  `cd flaskFiles`
-  
-3. Install neccessary libraries from 
-  
-  `pip3 install -r requirements.txt`
-  
+`source venv/bin/activate`
+
+2. Go into the flask dir
+
+`cd flaskFiles`
+
+3. Install neccessary libraries from
+
+`pip3 install -r requirements.txt`
+
 4. Check the current FLASK_APP environment variable with
-  
-  `echo $FLASK_APP`
-  
-5. If it returns with `app`, skip this step, otherwise type in 
-  
-  `export FLASK_APP="app"`
-  
-6. Run the server with 
-  
-  `flask run`
+
+`echo $FLASK_APP`
+
+5. If it returns with `app`, skip this step, otherwise type in
+
+`export FLASK_APP="app"`
+
+6. Run the server with
+
+`flask run`
 
 ---
 
@@ -81,7 +81,7 @@ Note: clear cache & cookies might come in handy when debugging
 ### Timeline
 
 Demo for initial design concept using AdobeXD
-  https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen
+https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen
 
 - Please refer to the _Projects_ tab to see what actions need to be done still
 
@@ -98,3 +98,7 @@ Demo for initial design concept using AdobeXD
 ### Theme
 
 [Login Design](https://profile.w3schools.com/log-in?redirect_url=https%3A%2F%2Fmy-learning.w3schools.com)
+
+### Resources
+
+[Imgs](https://www.humaaans.com)
