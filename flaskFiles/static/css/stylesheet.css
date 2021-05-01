@@ -8,34 +8,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-#loading {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background: white;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-#spinner {
-  animation: rotate 0.56s infinite linear;
-  width: 50px;
-  height: 50px;
-  border: 12px solid rgb(98, 116, 255);
-  border-bottom: 12px solid #fff;
-  border-radius: 50%;
-  margin: 0;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 header {
   width: 100%;
   padding: 6vh 4vw;
@@ -84,13 +56,16 @@ header table {
   background-repeat: no-repeat !important;
   margin: 0px auto;
 }
+/* Logo for website placed on navbar top left */
 #logo {
   font-size: 24px;
   color: rgb(98, 116, 255);
 }
+/* Align all elements under this id to right (about, login etc.) */
 #navigation {
   text-align: right;
 }
+/* All elements of type <a> */
 #navigation a {
   color: inherit;
   text-decoration: none;
@@ -99,10 +74,10 @@ header table {
   margin-left: 4vw;
   transition: 0.4s ease-in-out;
 }
+/*  When mouse hovers over a element <a> border under the text is outlined in white */
 #navigation a:hover {
   border-bottom: 2px solid #fff;
 }
-
 #top_part {
   width: 100%;
   border: 2vh solid #fff;
@@ -111,6 +86,7 @@ header table {
   width: 50%;
 }
 #about {
+  /* Make width the most important element here as if its too small or too big it will affect the layout visual of homepage */
   width: 84% !important;
   height: 95vh;
   display: flex;
@@ -131,6 +107,7 @@ header table {
   width: 20% !important;
   text-align: left;
 }
+/* styling for the logo's for social media platforms */
 .social {
   color: rgb(98, 116, 255);
   font-size: 23px;
@@ -141,9 +118,10 @@ header table {
   font-weight: bold;
   margin: 0px 8px;
 }
+/* During mouse over social media logo's  */
 .social:hover {
-  cursor: pointer;
-  color: #fff;
+  cursor: pointer; /* Change cursor to pointer for user feedback*/
+  color: #fff; /* Logo changes color to white while background turns blue */
   background: rgb(98, 116, 255);
   box-shadow: 0px 10px 30px rgba(98, 116, 255s);
 }
@@ -167,19 +145,6 @@ header table {
   background: rgb(98, 116, 255);
 }
 #rightImage {
-  width: 100%;
-  height: 95vh;
-  background: linear-gradient(
-      0deg,
-      rgba(98, 116, 255, 0.7),
-      rgba(298, 116, 255, 0.7)
-    ),
-    url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1")
-      center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#about_rightImage {
   width: 100%;
   height: 95vh;
   background: linear-gradient(
