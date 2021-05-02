@@ -76,7 +76,10 @@ header table {
 }
 /*  When mouse hovers over a element <a> border under the text is outlined in white */
 #navigation a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
+}
+.navigation-white-border a:hover {
+  border-bottom: 2px solid #fff !important ;
 }
 #top_part {
   width: 100%;

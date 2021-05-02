@@ -23,7 +23,7 @@
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 <!-- CSS -->
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}" media="screen" />
 
 <head>
   <title>Learn React</title>
@@ -31,10 +31,6 @@
   <!-- Nav placed here -->
   <nav class="navbar ">
     <a class="navbar-brand" href="homepage.html">
-      <!-- <img src="/Logo.mp4"  type="video/mp4" width="70" height="65" class="d-inline-block align-top" alt=""> -->
-      <video width="90" height="85" autoplay loop>
-        <source src="imgs/Logo.mp4" type="video/mp4">
-      </video>
     </a>
     <div class="btn-group">
       <ul class="nav navbar-nav"></ul>
