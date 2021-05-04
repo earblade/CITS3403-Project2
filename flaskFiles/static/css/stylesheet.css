@@ -8,34 +8,6 @@ body {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-#loading {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  background: white;
-  z-index: 999;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-#spinner {
-  animation: rotate 0.56s infinite linear;
-  width: 50px;
-  height: 50px;
-  border: 12px solid rgb(98, 116, 255);
-  border-bottom: 12px solid #fff;
-  border-radius: 50%;
-  margin: 0;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 header {
   width: 100%;
   padding: 6vh 4vw;
@@ -167,19 +139,6 @@ header table {
   background: rgb(98, 116, 255);
 }
 #rightImage {
-  width: 100%;
-  height: 95vh;
-  background: linear-gradient(
-      0deg,
-      rgba(98, 116, 255, 0.7),
-      rgba(298, 116, 255, 0.7)
-    ),
-    url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1")
-      center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#about_rightImage {
   width: 100%;
   height: 95vh;
   background: linear-gradient(
@@ -446,9 +405,8 @@ button:focus {
 .border-signup {
   border: 3px solid rgba(98, 116, 255, 1);
   background-color: #fff;
-  padding: 20px;
-  margin: 5rem auto;
-  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
   height: auto;
   width: 30rem;
   border-radius: 9%;
@@ -456,9 +414,8 @@ button:focus {
 .border-login {
   border: 3px solid rgba(98, 116, 255, 1);
   background-color: #fff;
-  padding: 20px;
-  margin: 5rem auto;
-  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
   height: auto;
   width: 30rem;
   border-radius: 10%;
