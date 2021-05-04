@@ -5,23 +5,29 @@
   class="animated slideInLeft"
   style="animation-delay: 800ms; text-align: center"
 >
-  <div id="signup" class="border-login">
+  <div id="signup" class="border-signup">
     <form class="" action="/action_page.php" method="POST">
       <div class="header">
         <legend style="text-align: left">
-          <em><strong>Login</strong></em>
+          <em><strong>Sign Up</strong></em>
         </legend>
-
         <span
           class="sml-info"
           style="position: absolute; right: 20px; bottom: 0px"
-          >Need to sign up?
-          <span style="margin-left: 10px"
-            ><a href="/signup">Sign up</a></span
+          >Already have an account?<span style="margin-left: 10px"
+            ><a href="/login">Login</a></span
           ></span
         >
       </div>
       <fieldset>
+        <input
+          class=""
+          placeholder="Email"
+          type="text"
+          name="lastname"
+          id="email"
+          value="{{ request.form.email }}"
+        />
         <input
           class=""
           placeholder="Username"
@@ -30,16 +36,6 @@
           id="uname"
           value="{{ request.form.username }}"
         />
-
-        <input
-          class=""
-          placeholder="Email"
-          type="text"
-          name="email"
-          id="email"
-          value="{{ request.form.email }}"
-        />
-
         <input
           class=""
           placeholder="Password"
@@ -48,7 +44,21 @@
           id="password"
           value="{{ request.form.password }}"
         />
-
+        <br />
+        <div style="text-align: left; position: relative">
+          <label style="font-size: 0.8rem; position: absolute; left: 25px"
+            >date of birth</label
+          >
+        </div>
+        <input
+          class=""
+          placeholder=""
+          type="date"
+          name="lastname"
+          id="dob"
+          value="{{ request.form.dob }}"
+        />
+        <!--add script to make grey initially or figure out a way on the internet to make it grey initially-->
         <input
           class="submit-button"
           type="submit"
@@ -60,7 +70,7 @@
     </form>
 
     {% if error %}
-    <p class="error">Error is: {{error}}</p>
+    <p>Error is: {{ error }}</p>
     {% endif %}
 
   </div>
