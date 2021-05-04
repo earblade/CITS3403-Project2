@@ -6,18 +6,20 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
+    navbar = "position:static;"
+
     return render_template('homepage.html', title="Learn React")
 
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title="About us")
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-
     error = None
+    navbar = "position:static;"
 
     if request.method == 'POST':
 
@@ -26,19 +28,20 @@ def login():
         else:
             return redirect(url_for('home'))
 
-    return render_template('login.html', error=error)
+    return render_template('login.html', error=error, navbar=navbar, title="Login")
 
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     error = None
+    navbar = "position:static;"
 
     if request.method == 'POST':
         if request.form['username'] != username or request.form['password'] != password:
             error = "Incorrect input"
         else:
             return redirect(url_for('home'))
-    return render_template('signup.html', error=error)
+    return render_template('signup.html', error=error, navbar=navbar, title="Signup")
 
 @app.route('/Page1.html', methods=['GET', 'POST'])
 def learningcontent():
