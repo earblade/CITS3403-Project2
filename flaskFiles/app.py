@@ -13,7 +13,8 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', title="About us")
+    navbar = "position:static"
+    return render_template('about.html', navbar=navbar, title="About us")
 
 
 @app.route('/login', methods=['GET', 'POST'])
