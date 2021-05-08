@@ -77,7 +77,7 @@ def signup():
                         email=form.email.data, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
-        return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
+        # return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
     return render_template('signup.html', form=form)
 
 
