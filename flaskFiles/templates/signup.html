@@ -1,37 +1,18 @@
 {% extends "h-and-f.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+
 
 {% block content %}
-<div class="animated slideInLeft" style="animation-delay: 800ms; text-align: center">
-  <div id="signup" class="border-signup">
-    <form class="" action="/action_page.php" method="POST">
-      <div class="header">
-        <legend style="text-align: left">
-          <em><strong>Sign Up</strong></em>
-        </legend>
-        <span class="sml-info" style="position: absolute; right: 20px; bottom: 0px">Already have an account?<span
-            style="margin-left: 10px"><a href="/login">Login</a></span></span>
-      </div>
-      <fieldset>
-        <input class="" placeholder="Email" type="text" name="lastname" id="email" value="{{ request.form.email }}" />
-        <input class="" placeholder="Username" type="text" name="username" id="uname"
-          value="{{ request.form.username }}" />
-        <input class="" placeholder="Password" type="password" name="password" id="password"
-          value="{{ request.form.password }}" />
-        <br />
-        <div style="text-align: left; position: relative">
-          <label style="font-size: 0.8rem; position: absolute; left: 25px">date of birth</label>
-        </div>
-        <input class="" placeholder="" type="date" name="lastname" id="dob" value="{{ request.form.dob }}" />
-        <!--add script to make grey initially or figure out a way on the internet to make it grey initially-->
-        <input class="submit-button" type="submit" value="Submit" id="submit-button" />
-        <br />
-      </fieldset>
-    </form>
+<div class="container">
 
-    {% if error %}
-    <p>Error is: {{ error }}</p>
-    {% endif %}
+  <form method="POST" action="/signup">
+    <h2>Sign Up</h2>
+    {{ form.hidden_tag() }}
+    {{ wtf.form_field(form.username) }}
+    {{ wtf.form_field(form.email) }}
+    {{ wtf.form_field(form.password) }}
+    <button class="submit-button" type="submit">Sign Up</button>
+  </form>
 
-  </div>
 </div>
 {% endblock %}
