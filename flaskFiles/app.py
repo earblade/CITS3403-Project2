@@ -24,7 +24,7 @@ def login():
 
     if request.method == 'POST':
 
-        if request.form['username'] != 'ethan' or request.form['password'] != password:
+        if request.form['username'] != 'testpassword' or request.form['password'] != password:
             error = "Incorrect input"
         else:
             return redirect(url_for('home'))
@@ -44,55 +44,69 @@ def signup():
             return redirect(url_for('home'))
     return render_template('signup.html', error=error, navbar=navbar, title="Signup")
 
-@app.route('/Page1.html', methods=['GET', 'POST'])
+
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
+
+@app.route('/Page1', methods=['GET', 'POST'])
 def learningcontent():
 
     error = None
     return render_template('Page1.html')
 
-@app.route('/Introduction.html', methods=['GET', 'POST'])
+
+@app.route('/Introduction', methods=['GET', 'POST'])
 def introduction():
 
     error = None
     return render_template('Introduction.html')
 
-@app.route('/Basics.html', methods=['GET', 'POST'])
+
+@app.route('/Basics', methods=['GET', 'POST'])
 def basics():
 
     error = None
     return render_template('Basics.html')
 
-@app.route('/Rendering.html', methods=['GET', 'POST'])
+
+@app.route('/Rendering', methods=['GET', 'POST'])
 def rendering():
 
     error = None
     return render_template('Rendering.html')
 
-@app.route('/Components.html', methods=['GET', 'POST'])
+
+@app.route('/Components', methods=['GET', 'POST'])
 def components():
 
     error = None
     return render_template('Components.html')
 
-@app.route('/Handling.html', methods=['GET', 'POST'])
+
+@app.route('/Handling', methods=['GET', 'POST'])
 def handling():
 
     error = None
     return render_template('Handling.html')
 
-@app.route('/Conditional.html', methods=['GET', 'POST'])
+
+@app.route('/Conditional', methods=['GET', 'POST'])
 def conditional():
 
     error = None
     return render_template('Conditional.html')
 
-@app.route('/Quiz.html', methods=['GET', 'POST'])
+
+@app.route('/Quiz', methods=['GET', 'POST'])
 def quiz():
 
     error = None
     return render_template('Quiz.html')
 
-@app.route('/Self.html', methods=['GET', 'POST'])
+
+@app.route('/Self', methods=['GET', 'POST'])
 def self():
 
     error = None
