@@ -94,8 +94,15 @@ def conditional():
     return render_template('Conditional.html')
 
 
+@app.route('/EndOfTutorial', methods=['GET', 'POST'])
+def EndOfTutorial():
+
+    error = None
+    return render_template('EndOfTutorial.html')
+
+
 @app.route('/Quiz', methods=['GET', 'POST'])
-def quiz():
+def Quiz():
 
     error = None
     return render_template('Quiz.html')

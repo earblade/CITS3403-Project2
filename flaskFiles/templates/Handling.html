@@ -30,7 +30,7 @@
     </head>
 
     <main>
-        <div class="centre">
+        <div class="container">
             <h3>React Basics</h3>
             <h4>3. Handling Events </h4>
             <p>Handling events with React elements is very similar to handling events on DOM elements. There are some
@@ -39,13 +39,21 @@
                 <li>React events are named using camelCase, rather than lowercase.</li>
                 <li>With JSX you pass a function as the event handler, rather than a string.</li>
             </ul>
-
-            <!-- Embed the code pen with an example of Handling Events from the react website. -->
-            <p>Try out and practice the above code in <a href="https://codepen.io/pen?&editors=0010">CodePen</a></p>
+            <p>Try out and practice handling events in <a href="https://codepen.io/pen?&editors=0010">CodePen</a></p>
             <button type="button" class="btn btn-primary" onclick="window.location.href='Components'">Back</button>
             <button type="button" class="btn btn-primary" onclick="window.location.href='Conditional'">Next</button>
         </div>
     </main>
+
+    <div class="container">
+        <p>Your Progress:</p>
+    </div>
+    <div class="progress container">
+        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+            aria-valuemax="100"></div>
+    </div>
+
+
 </body>
 
 </html>

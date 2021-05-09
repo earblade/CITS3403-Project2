@@ -3,10 +3,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 60%;
     margin-right: -50%;
     transform: translate(-50%, -50%) 
 }
 
 h3 {
     text-align: center;
+}
+body {
+    background: rgb(201, 207, 255);
 }
