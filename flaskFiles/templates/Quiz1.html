@@ -8,7 +8,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Contents.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
-    <title>Conditional Rendering</title>
+    <title>Quiz</title>
 </head>
 
 <body>
@@ -31,25 +31,48 @@
 
     <main>
         <div class="container">
-            <h3>React Basics</h3>
-            <h4>4. Conditional Rendering: </h4>
-            <p>In React, you can create distinct components that encapsulate behavior you need. Then, you can render
-                only some of them, depending on the state of your application. Conditional rendering in React works the
-                same way conditions work in JavaScript.</p>
-            </p>
-            <!-- Embed the code pen with an example of Conditional Rendering from the react website. -->
-            <p>Try out and practice the above code in <a href="https://codepen.io/pen?&editors=0010">CodePen</a></p>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='Handling'">Back</button>
-            <button type="button" class="btn btn-primary" onclick="window.location.href='EndOfTutorial'">Next</button>
+            <h3>Quiz</h3>
+            <p>1. What is React:</p>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    A programming language.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Javascript
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Backend tool to develop websites.
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    FrontEnd Javascript library.
+                </label>
+            </div>
+
+            <br>
+
+            <button type="button" class="btn btn-primary" onclick="window.location.href='EndOfTutorial'">Back</button>
+            <button type="button" class="btn btn-primary" onclick="window.location.href='Quiz2'">Next</button>
+
         </div>
     </main>
 
+    <br><br>
     <div class="container">
         <p>Your Progress:</p>
     </div>
     <div class="progress container">
-        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0"
-            aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0"
+            aria-valuemax="100">33%</div>
     </div>
 
 

@@ -450,3 +450,12 @@ button:focus {
 #navspacing {
   margin-bottom: 30px;
 }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.815);
+  color: white;
+}

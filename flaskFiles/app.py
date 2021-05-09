@@ -83,11 +83,32 @@ def conditional():
     return render_template('Conditional.html')
 
 
-@app.route('/Quiz', methods=['GET', 'POST'])
-def quiz():
+@app.route('/EndOfTutorial', methods=['GET', 'POST'])
+def EndOfTutorial():
 
     error = None
-    return render_template('Quiz.html')
+    return render_template('EndOfTutorial.html')
+
+
+@app.route('/Quiz1', methods=['GET', 'POST'])
+def Quiz1():
+
+    error = None
+    return render_template('Quiz1.html')
+
+
+@app.route('/Quiz2', methods=['GET', 'POST'])
+def Quiz2():
+
+    error = None
+    return render_template('Quiz2.html')
+
+
+@app.route('/Quiz3', methods=['GET', 'POST'])
+def Quiz3():
+
+    error = None
+    return render_template('Quiz3.html')
 
 
 @app.route('/Self', methods=['GET', 'POST'])
