@@ -45,7 +45,7 @@ def signup():
     return render_template('signup.html', error=error, navbar=navbar, title="Signup")
 
 
-@app.route('/Page1', methods=['GET', 'POST'])
+@app.route('/learningcontent', methods=['GET', 'POST'])
 def learningcontent():
 
     error = None
