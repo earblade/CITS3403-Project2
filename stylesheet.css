@@ -1,66 +1,4 @@
-/* h1 {
-  font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  color:#99738e;
-  text-align: center;
-}
-
-h2 {
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
-  text-align: center;
-}
-
-body {
-  background-color: #2F2FA2;
-}
-
-button {
-  font-family:Arial, Helvetica, sans-serif;
-  font-size: 40px;
-  text-align: center;
-  font-weight: bold;
-  margin: 10px 20px 10px 20px;
-}
-
-
-
-navbar-button-alignment {
-  float: right;
-  font-size: 100px;
-  background-color: aquamarine;
-}
-
-li {
-  list-style-type: none;
-}
-
-p {
-  color: white;
-}
-
-.test {
-  font-size: 300px;
-  width:min-content;
-  margin-top: 1000px;
-}
-
-.card-spacing {
-  padding: 0px 25% 0px 25%;
-}
-
-.card-text-black {
-  color:black;
-  font-size: medium;
-}
-
-.white-background {
-  background-color: white;
-}  */
-
-/* Start Of V2 */
-@import url("https://fonts.googleapis.com/css?family=Poppins");
+/* @import url("https://fonts.googleapis.com/css?family=Poppins");
 
 body {
   font-family: "Poppins", sans-serif;
@@ -522,4 +460,4 @@ button:focus {
 }
 .sml-info a:hover {
   color:#7e5e75
-}*/
+}*/ */
