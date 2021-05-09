@@ -1,66 +1,78 @@
-<!DOCTYPE html>
-<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-<html lang="en">
+{% extends "h-and-f.html" %} 
 
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<!-- Javascript -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-<!-- jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-<!-- CSS -->
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylesheet.css') }}" media="screen" />
-
-<head>
-  <title>Learn React</title>
-
-  <header id="header" class="animated slideInDown" style="animation-delay:800ms;position:static; color:black;">
-    <table>
-      <tr>
-        <td id="logo"><a href="/" style="text-decoration:none;">Learn React.</a></td>
-        <td id="navigation">
-          <a href="/about">About</a>
-          <a href="/Page1">Learning Content</a>
-          <a href="/login">Login</a>
-        </td>
-      </tr>
-    </table>
-  </header>
-</head>
-
-<body>
-  <div class="container">
-    <div id="signup" class="border-signup">
-      <form class="" action="/action_page.php">
-        <legend>
+{% block content %}
+<div
+  class="animated slideInLeft"
+  style="animation-delay: 800ms; text-align: center; color: black;"
+>
+  <div id="signup" class="border-signup">
+    <form class="" action="/action_page.php" method="POST">
+      <div class="header">
+        <legend style="text-align: left">
           <em><strong>Sign Up</strong></em>
         </legend>
-        <fieldset>
-          <input class="" placeholder="username" type="text" name="username" id="uname" />
-          <input class="" placeholder="email" type="text" name="lastname" id="email" />
-          <input class="" placeholder="date of birth" type="text" name="lastname" id="dob" />
-          <input class="submit-button" type="submit" value="Submit" id="submit-button" />
-          <br>
-          <span class="sml-info">Already have an account? <span style="margin-left: 10px;"><a
-                href="login.html">Login</a></span></span>
-        </fieldset>
-      </form>
-    </div>
-  </div>
-</body>
+        <span
+          class="sml-info"
+          style="position: absolute; right: 20px; bottom: 0px"
+          >Already have an account?<span style="margin-left: 10px"
+            ><a href="/login">Login</a></span
+          ></span
+        >
+      </div>
+      <fieldset>
+        <input
+          class=""
+          placeholder="Email"
+          type="text"
+          name="lastname"
+          id="email"
+          value="{{ request.form.email }}"
+        />
+        <input
+          class=""
+          placeholder="Username"
+          type="text"
+          name="username"
+          id="uname"
+          value="{{ request.form.username }}"
+        />
+        <input
+          class=""
+          placeholder="Password"
+          type="password"
+          name="password"
+          id="password"
+          value="{{ request.form.password }}"
+        />
+        <br />
+        <div style="text-align: left; position: relative">
+          <label style="font-size: 0.8rem; position: absolute; left: 25px"
+            >date of birth</label
+          >
+        </div>
+        <input
+          class=""
+          placeholder=""
+          type="date"
+          name="lastname"
+          id="dob"
+          value="{{ request.form.dob }}"
+        />
+        <!--add script to make grey initially or figure out a way on the internet to make it grey initially-->
+        <input
+          class="submit-button"
+          type="submit"
+          value="Submit"
+          id="submit-button"
+        />
+        <br />
+      </fieldset>
+    </form>
 
-</html>
+    {% if error %}
+    <p>Error is: {{ error }}</p>
+    {% endif %}
+
+  </div>
+</div>
+{% endblock %}
