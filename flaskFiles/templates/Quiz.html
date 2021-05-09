@@ -8,6 +8,7 @@
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Contents.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/Quiz.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}">
     <title>Quiz</title>
 </head>
 
@@ -55,13 +56,13 @@
                 <div class="h4 font-weight-bold"> 2. Correct way to
                     render node "root" is:</div>
                 <div class="pt-4">
-                    <form> <label class="options"><code>React.render(document);</code> <input type="radio" name="radio">
+                    <form> <label class="options"><code>React.render(document)</code> <input type="radio" name="radio">
                             <span class="checkmark"></span> </label> <label
-                            class="options"><code>ReactDOM.render(element, 'root');</code> <input type="radio"
+                            class="options"><code>ReactDOM.render(element, 'root')</code> <input type="radio"
                                 name="radio"> <span class="checkmark"></span> </label> <label
-                            class="options"><code>ReactDOM.render(element, document.getElementById('root'));</code><input
+                            class="options"><code>ReactDOM.render(element, document.getElementById('root'))</code><input
                                 type="radio" name="radio" id="rd"> <span class="checkmark"></span> </label> <label
-                            class="options"><code>ReactDOM.render());</code>
+                            class="options"><code>ReactDOM.render())</code>
                             <input type="radio" name="radio"> <span class="checkmark"></span> </label>
                     </form>
                 </div>
@@ -86,7 +87,7 @@
                 </div>
                 <div class="d-flex justify-content-end pt-2"> <button class="btn btn-primary mx-3" id="back2"> <span
                             class="fas fa-arrow-left pr-2"></span>Previous </button> <button class="btn btn-primary"
-                        id="next3">Submit </button> </div>
+                        id="next2">Submit <span class="fas fa-arrow-right"></span> </button> </div>
             </div>
         </div>
         <div class="d-flex flex-column align-items-center">
@@ -97,18 +98,5 @@
     </main>
 
 </body>
-
-<div class="footer">
-    <table>
-        <tr>
-            <td id="logo"><a href="/" style="text-decoration:none;">Learn React.</a></td>
-            <td id="navigation">
-                <a href="/about">About</a>
-                <a href="/Page1">Learning Content</a>
-                <a href="/login">Login</a>
-            </td>
-        </tr>
-    </table>
-</div>
 
 </html>
