@@ -23,8 +23,6 @@ class User(UserMixin, db.Model):
     email = db.Column(db.String(50), unique=True)
     password = db.Column(db.String(80))
 
-# Login Manager
-
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -57,7 +55,7 @@ def login():
         if user:
             if check_password_hash(user.password, form.password.data):
                 login_user(user, remember=form.remember.data)
-                return redirect(url_for('dashboard'))
+                return redirect(url_for('learningcontent'))
 
         return '<h1>Invalid username or password</h1>'
         # return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
@@ -77,6 +75,8 @@ def signup():
                         email=form.email.data, password=hashed_password)
         db.session.add(new_user)
         db.session.commit()
+        #  redirect after successful sign in to login page to login to new account
+        return redirect(url_for('login'))
         # return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
     return render_template('signup.html', form=form)
 
