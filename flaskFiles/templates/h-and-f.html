@@ -46,7 +46,7 @@
 <body>
     <div id="magnify">
         <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
+        <div id="img_here" href="/"></div>
     </div>
     <!-- NAVBAR -->
     <header id="header" class="animated slideInDown" style="animation-delay:800ms;">
@@ -55,8 +55,14 @@
                 <td id="logo">Learn React.</td>
                 <td id="navigation">
                     <a href="/about">About</a>
-                    <a href="/learningcontent">FAQ</a>
+                    <a href="/learningcontent">Learning Content</a>
+                    <!-- Force redirects- if user isn't logged in the show login else show logout -->
+                    {% if current_user.is_anonymous %}
                     <a href="/login">Login</a>
+                    {% else %}
+                    <a href="/logout">Logout</a>
+                    {% endif %}
+
                 </td>
             </tr>
         </table>

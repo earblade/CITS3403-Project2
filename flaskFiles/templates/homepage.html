@@ -1,83 +1,83 @@
 {% extends "h-and-f.html" %}
 
 {% block content %}
-  <table id="top_part">
+<table id="top_part">
+  <tr>
+    <td id="about" class="animated slideInLeft" style="animation-delay:1000ms;">
+      <h1>Learn React Anywhere At Your Own Pace</h1>
+      <button class="btn_one" href="/learningcontent">Start</button><br>
+      <!-- Animation for Icons to start small then increase in size with delay in order -->
+      <table>
+        <!-- Using third party library to animate icons -->
+        <tr class="animated slideInLeft" style="animation-delay:1200ms;">
+          <td class="animated zoomIn" style="animation-delay:1200ms;"><a class="social"><i
+                class="fab fa-facebook"></i></a></td>
+          <td class="animated zoomIn" style="animation-delay:1400ms;"><a class="social"><i
+                class="fab fa-twitter"></i></a></td>
+          <td class="animated zoomIn" style="animation-delay:1600ms;"><a class="social"><i
+                class="fab fa-instagram"></i></a></td>
+        </tr>
+      </table>
+    </td>
+    <!-- Homepage image located on right, using third party animation library, jack in box animation with dealy of 2 secs  -->
+    <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2000ms;"></td>
+  </tr>
+</table>
+<div id="bio">
+  <h1>about</h1>
+  <p>
+    React is a way to build user interfaces. It is only concerned with what you see on the front-end. React makes user
+    interfaces very easy to build by cutting each page into pieces. We call these pieces components.
+
+    Here is an example of cutting a page into components:
+  </p>
+</div>
+<div id="contact">
+  <h1>contact</h1>
+  <table>
     <tr>
-      <td id="about" class="animated slideInLeft" style="animation-delay:1000ms;">
-        <h1>Learn React Anywhere At Your Own Pace</h1>
-        <button class="btn_one">Start</button><br>
-        <!-- Animation for Icons to start small then increase in size with delay in order -->
-        <table>
-          <!-- Using third party library to animate icons -->
-          <tr class="animated slideInLeft" style="animation-delay:1200ms;">
-            <td class="animated zoomIn" style="animation-delay:1200ms;"><a class="social"><i
-                  class="fab fa-facebook"></i></a></td>
-            <td class="animated zoomIn" style="animation-delay:1400ms;"><a class="social"><i
-                  class="fab fa-twitter"></i></a></td>
-            <td class="animated zoomIn" style="animation-delay:1600ms;"><a class="social"><i
-                  class="fab fa-instagram"></i></a></td>
-          </tr>
-        </table>
+      <td>
+        <div id="inner_div">
+          <table id="inner_table">
+            <tr>
+              <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-at"></i> &nbsp;Support@learnreact.com</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
+            </tr>
+            <tr>
+              <td><i class="fas fa-map-marker-alt"></i>
+                <div id="address">
+                  191 St Georges Terrace,<br>
+                  Perth WA,<br>
+                  Australia
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a class="social"><i class="fab fa-facebook"></i></a>
+                <a class="social"><i class="fab fa-twitter"></i></a>
+                <a class="social"><i class="fab fa-instagram"></i></a>
+              </td>
+            </tr>
+          </table>
+        </div>
       </td>
-      <!-- Homepage image located on right, using third party animation library, jack in box animation with dealy of 2 secs  -->
-      <td id="rightImage" class="animated jackInTheBox" style="animation-delay:2000ms;"></td>
+      <td>
+        <!-- Email message on right of contact, bottom of homepage -->
+        <form>
+          <input type="text" placeholder="name" required>
+          <input type="email" placeholder="email" required><br>
+          <textarea placeholder="your message" required rows="5"></textarea><br>
+          <button class="btn_one">send</button>
+        </form>
+      </td>
     </tr>
   </table>
-  <div id="bio">
-    <h1>about</h1>
-    <p>
-      React is a way to build user interfaces. It is only concerned with what you see on the front-end. React makes user
-      interfaces very easy to build by cutting each page into pieces. We call these pieces components.
-
-      Here is an example of cutting a page into components:
-    </p>
-  </div>
-  <div id="contact">
-    <h1>contact</h1>
-    <table>
-      <tr>
-        <td>
-          <div id="inner_div">
-            <table id="inner_table">
-              <tr>
-                <td><i class="fas fa-phone"></i> &nbsp; +1 234 567 8910</td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-at"></i> &nbsp;Support@learnreact.com</td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-fax"></i> &nbsp; +1 234 567 8910</td>
-              </tr>
-              <tr>
-                <td><i class="fas fa-map-marker-alt"></i>
-                  <div id="address">
-                    191 St Georges Terrace,<br>
-                    Perth WA,<br>
-                    Australia
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a class="social"><i class="fab fa-facebook"></i></a>
-                  <a class="social"><i class="fab fa-twitter"></i></a>
-                  <a class="social"><i class="fab fa-instagram"></i></a>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </td>
-        <td>
-          <!-- Email message on right of contact, bottom of homepage -->
-          <form>
-            <input type="text" placeholder="name" required>
-            <input type="email" placeholder="email" required><br>
-            <textarea placeholder="your message" required rows="5"></textarea><br>
-            <button class="btn_one">send</button>
-          </form>
-        </td>
-      </tr>
-    </table>
-  </div>
+</div>
 
 {% endblock %}

@@ -103,7 +103,9 @@ def about():
 
 @app.route('/learningcontent', methods=['GET', 'POST'])
 def learningcontent():
-
+    # If no user logged in currently in session, then redirect back to login
+    if current_user.is_anonymous:
+        return redirect(url_for('login'))
     error = None
     return render_template('learningcontent.html', name=current_user.username)
 

@@ -24,7 +24,13 @@
             <td id="navigation">
               <a href="/about">About</a>
               <a href="/learningcontent">Learning Content</a>
+
+              <!--  if user isn't logged in then show login -->
+              {% if current_user.is_anonymous %}
               <a href="/login">Login</a>
+              {% else %}
+              <a href="/logout">Logout</a>
+              {% endif %}
             </td>
           </tr>
         </table>
