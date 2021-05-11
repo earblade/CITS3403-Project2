@@ -1,63 +1,31 @@
-{% extends "h-and-f.html" %}
+<!-- {% extends "h-and-f.html" %} -->
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block content %}
 <div class="animated slideInLeft" style="animation-delay: 800ms; text-align: center">
 
   <div id="signup" class="border-login">
-    <form class="" action="/action_page.php" method="POST">
-      <div class="header">
-        <legend style="text-align: left">
-          <em><strong>Login</strong></em>
-        </legend>
 
-        <span
-          class="sml-info"
-          style="position: absolute; right: 20px; bottom: 0px"
-          >Need to sign up?
-          <span style="margin-left: 10px"
-            ><a href="/signup">Sign up</a></span
-          ></span
-        >
-      </div>
-      <fieldset>
-        <input
-          class=""
-          placeholder="Username"
-          type="text"
-          name="username"
-          id="uname"
-          value="{{ request.form.username }}"
-        />
+    <div class="header">
+      <legend style="text-align: left">
+        <em><strong>Login</strong></em>
+      </legend>
 
-        <input
-          class=""
-          placeholder="Email"
-          type="text"
-          name="email"
-          id="email"
-          value="{{ request.form.email }}"
-        />
+      <span class="sml-info" style="position: absolute; right: 20px; bottom: 0px">Need to sign up?
+        <span style="margin-left: 10px"><a href="/signup">Sign up</a></span></span>
+    </div>
+    <div class="container">
 
-        <input
-          class=""
-          placeholder="Password"
-          type="password"
-          name="password"
-          id="password"
-          value="{{ request.form.password }}"
-        />
+      <form class="form-signin" method="POST" action="/login">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.username) }}
+        {{ wtf.form_field(form.password) }}
+        {{ wtf.form_field(form.remember) }}
+        <button class="btn_two" type="submit">Sign in</button>
+      </form>
 
-        <input
-          class="submit-button"
-          type="submit"
-          value="Submit"
-          id="submit-button"
-        />
-
-        <br />
-      </fieldset>
-    </form>
-
+    </div>
     {% if error %}
     <p class="error">Error is: {{error}}</p>
     {% endif %}

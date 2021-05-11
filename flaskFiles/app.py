@@ -17,7 +17,6 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 
-Account-login-and-signup-
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(15), unique=True)
@@ -46,9 +45,10 @@ class RegisterForm(FlaskForm):
     password = PasswordField('password', validators=[
                              InputRequired(), Length(min=8, max=80)])
 
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-Account-login-and-signup-
+
     form = LoginForm()
 
     if form.validate_on_submit():
@@ -63,9 +63,10 @@ Account-login-and-signup-
 
     return render_template('login.html', form=form)
 
+
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
-Account-login-and-signup-
+
     form = RegisterForm()
 
     if form.validate_on_submit():
@@ -100,12 +101,11 @@ def about():
     return render_template('about.html')
 
 
-
 @app.route('/learningcontent', methods=['GET', 'POST'])
 def learningcontent():
 
     error = None
-    return render_template('Page1.html')
+    return render_template('learningcontent.html', name=current_user.username)
 
 
 @app.route('/Introduction', methods=['GET', 'POST'])
