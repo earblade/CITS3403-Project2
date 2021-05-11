@@ -1,17 +1,32 @@
 {% import "bootstrap/wtf.html" as wtf %}
-
+{% extends "h-and-f.html" %}
 
 {% block content %}
-<div class="container">
+<div class="animated slideInLeft" style="animation-delay: 800ms; text-align: center; color: black;">
+  <div id="signup" class="border-signup">
+    <div class="header">
+      <legend style="text-align: left">
+        <em><strong>Sign Up</strong></em>
+      </legend>
+      <span class="sml-info" style="position: absolute; right: 20px; bottom: 0px">Already have an account?<span
+          style="margin-left: 10px"><a href="/login">Login</a></span></span>
+    </div>
+    <div class="container">
 
-  <form method="POST" action="/signup">
-    <h2>Sign Up</h2>
-    {{ form.hidden_tag() }}
-    {{ wtf.form_field(form.username) }}
-    {{ wtf.form_field(form.email) }}
-    {{ wtf.form_field(form.password) }}
-    <button class="submit-button" type="submit">Sign Up</button>
-  </form>
+      <form method="POST" action="/signup">
+        <h2>Sign Up</h2>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.username) }}
+        {{ wtf.form_field(form.email) }}
+        {{ wtf.form_field(form.password) }}
+        <button class="submit-button" type="submit">Sign Up</button>
+      </form>
 
+    </div>
+    {% if error %}
+    <p>Error is: {{ error }}</p>
+    {% endif %}
+
+  </div>
 </div>
 {% endblock %}
