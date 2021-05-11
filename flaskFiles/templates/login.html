@@ -1,10 +1,8 @@
-{% extends "h-and-f.html" %} 
+{% extends "h-and-f.html" %}
 
 {% block content %}
-<div
-  class="animated slideInLeft"
-  style="animation-delay: 800ms; text-align: center; color: black;"
->
+<div class="animated slideInLeft" style="animation-delay: 800ms; text-align: center">
+
   <div id="signup" class="border-login">
     <form class="" action="/action_page.php" method="POST">
       <div class="header">
@@ -55,6 +53,7 @@
           value="Submit"
           id="submit-button"
         />
+
         <br />
       </fieldset>
     </form>
@@ -62,7 +61,6 @@
     {% if error %}
     <p class="error">Error is: {{error}}</p>
     {% endif %}
-    
   </div>
 </div>
 {% endblock %}
