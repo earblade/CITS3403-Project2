@@ -17,6 +17,7 @@ login_manager.init_app(app)
 login_manager.login_view = 'login'
 
 
+Account-login-and-signup-
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(15), unique=True)
@@ -45,9 +46,9 @@ class RegisterForm(FlaskForm):
     password = PasswordField('password', validators=[
                              InputRequired(), Length(min=8, max=80)])
 
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+Account-login-and-signup-
     form = LoginForm()
 
     if form.validate_on_submit():
@@ -62,9 +63,9 @@ def login():
 
     return render_template('login.html', form=form)
 
-
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
+Account-login-and-signup-
     form = RegisterForm()
 
     if form.validate_on_submit():
@@ -99,7 +100,8 @@ def about():
     return render_template('about.html')
 
 
-@app.route('/Page1', methods=['GET', 'POST'])
+
+@app.route('/learningcontent', methods=['GET', 'POST'])
 def learningcontent():
 
     error = None
@@ -148,8 +150,15 @@ def conditional():
     return render_template('Conditional.html')
 
 
+@app.route('/EndOfTutorial', methods=['GET', 'POST'])
+def EndOfTutorial():
+
+    error = None
+    return render_template('EndOfTutorial.html')
+
+
 @app.route('/Quiz', methods=['GET', 'POST'])
-def quiz():
+def Quiz():
 
     error = None
     return render_template('Quiz.html')
@@ -160,6 +169,60 @@ def self():
 
     error = None
     return render_template('Self.html')
+
+# @app.route('/Page1.html', methods=['GET', 'POST'])
+# def learningcontent():
+
+#     error = None
+#     return render_template('Page1.html')
+
+# @app.route('/Introduction.html', methods=['GET', 'POST'])
+# def introduction():
+
+#     error = None
+#     return render_template('Introduction.html')
+
+# @app.route('/Basics.html', methods=['GET', 'POST'])
+# def basics():
+
+#     error = None
+#     return render_template('Basics.html')
+
+# @app.route('/Rendering.html', methods=['GET', 'POST'])
+# def rendering():
+
+#     error = None
+#     return render_template('Rendering.html')
+
+# @app.route('/Components.html', methods=['GET', 'POST'])
+# def components():
+
+#     error = None
+#     return render_template('Components.html')
+
+# @app.route('/Handling.html', methods=['GET', 'POST'])
+# def handling():
+
+#     error = None
+#     return render_template('Handling.html')
+
+# @app.route('/Conditional.html', methods=['GET', 'POST'])
+# def conditional():
+
+#     error = None
+#     return render_template('Conditional.html')
+
+# @app.route('/Quiz.html', methods=['GET', 'POST'])
+# def quiz():
+
+#     error = None
+#     return render_template('Quiz.html')
+
+# @app.route('/Self.html', methods=['GET', 'POST'])
+# def self():
+
+#     error = None
+#     return render_template('Self.html')
 
 
 if __name__ == '__main__':

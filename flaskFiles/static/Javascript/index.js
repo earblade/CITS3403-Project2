@@ -1,6 +1,6 @@
 var width = $(window).width(); // Retrieve current window width
 window.onscroll = function(){   // Execute function() when window is being scrolled:
-if ((width >= 1000)){
+if ((width >= 1000)){ // If current window width is greater or equal to 1000
 
     // If pixels of content (vertically) is greater than 80, change the navbar. 
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

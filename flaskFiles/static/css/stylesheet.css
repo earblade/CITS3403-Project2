@@ -414,9 +414,8 @@ button:focus {
 .border-signup {
   border: 3px solid rgba(98, 116, 255, 1);
   background-color: #fff;
-  padding: 20px;
-  margin: 5rem auto;
-  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
   height: auto;
   width: 30rem;
   border-radius: 9%;
@@ -424,9 +423,8 @@ button:focus {
 .border-login {
   border: 3px solid rgba(98, 116, 255, 1);
   background-color: #fff;
-  padding: 20px;
-  margin: 5rem auto;
-  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
   height: auto;
   width: 30rem;
   border-radius: 10%;
@@ -449,4 +447,13 @@ button:focus {
 }
 #navspacing {
   margin-bottom: 30px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.815);
+  color: white;
 }
