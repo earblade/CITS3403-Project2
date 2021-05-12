@@ -15,31 +15,30 @@
 
   <main>
 
-    <head>
-      <!-- NAVBAR -->
-      <header id="header" class="animated slideInDown" style="animation-delay:800ms;position:static; color:black;">
-        <table>
-          <tr>
-            <td id="logo"><a href="/" style="text-decoration:none;">Learn React.</a></td>
-            <td id="navigation">
-              <a href="/about">About</a>
-              <a href="/learningcontent">Learning Content</a>
 
-              <!--  if user isn't logged in then show login -->
-              {% if current_user.is_anonymous %}
-              <a href="/login">Login</a>
-              {% else %}
-              <a href="/logout">Logout</a>
-              {% endif %}
-            </td>
-          </tr>
-        </table>
-      </header>
-    </head>
+    <!-- NAVBAR -->
+    <header id="header" class="animated slideInDown" style="animation-delay:800ms;position:static; color:black;">
+      <table>
+        <tr>
+          <td id="logo"><a href="/" style="text-decoration:none;">Learn React.</a></td>
+          <td id="navigation">
+            <a href="/about">About</a>
+            <a href="/learningcontent">Learning Content</a>
+
+            <!--  if user isn't logged in then show login -->
+            {% if current_user.is_anonymous %}
+            <a href="/login">Login</a>
+            {% else %}
+            <a href="/logout">Logout</a>
+            {% endif %}
+          </td>
+        </tr>
+      </table>
+    </header>
 
 
     <div class="container">
-      <h1> Welcome, {{ name }}</h1>
+      <h1 class="welcome"> Welcome, {{ name }}</h1>
       <h3>React Basics</h3>
       <p>In this section you will learn the basics of React. There is a quiz at end of this section
         to test your understanding of basic React libraries.</p>

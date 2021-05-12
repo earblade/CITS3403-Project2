@@ -27,11 +27,16 @@ body {
 }
 header {
   width: 100%;
-  padding: 6vh 4vw;
+  /* padding: 6vh 4vw; */
   position: fixed;
   font-weight: bold;
   background: transparent;
   color: #fff;
   transition: 0.4s ease-in-out;
   z-index: 2;
+}
+.welcome {
+  padding: 5px 0px;
+  border-bottom: 4px solid rgb(98, 116, 255);
+  width: 10%;
 }
