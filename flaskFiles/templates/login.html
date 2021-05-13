@@ -11,18 +11,24 @@
         <em><strong>Login</strong></em>
       </legend>
 
-      <span class="sml-info" style="position: absolute; right: 20px; bottom: 0px">Need to sign up?
-        <span style="margin-left: 10px"><a href="/signup">Sign up</a></span></span>
+      <span class="xs-info" style="position: absolute; right: 20px; bottom: 0px">Need to sign up?
+        <span style="margin-left: 10px"><a href="/signup">Sign up</a></span>
+      </span>
     </div>
     <div class="container">
 
       <form class="form-signin" method="POST" action="/login">
-        <h2 class="form-signin-heading">Please sign in</h2>
+        <!--<h2 class="form-signin-heading">Please sign in</h2>-->
+        <br>
+        <br>
         {{ form.hidden_tag() }}
-        {{ wtf.form_field(form.username) }}
-        {{ wtf.form_field(form.password) }}
+        <div style="text-align:left;">
+          {{ wtf.form_field(form.username) }}
+          {{ wtf.form_field(form.password) }}
+        </div>
+        <br>
         {{ wtf.form_field(form.remember) }}
-        <button class="btn_two" type="submit">Sign in</button>
+        <button class="btn_two" type="submit">Login</button>
       </form>
 
     </div>

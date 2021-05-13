@@ -30,25 +30,26 @@ def load_user(user_id):
 
 
 class LoginForm(FlaskForm):
-    username = StringField('username', validators=[
+    username = StringField('Username', validators=[
                            InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('passowrd', validators=[
+    password = PasswordField('Password', validators=[
                              InputRequired(), Length(min=8, max=80)])
-    remember = BooleanField('remember me')
+    remember = BooleanField('Remember me')
 
 
 class RegisterForm(FlaskForm):
-    email = StringField('email', validators=[InputRequired(), Email(
+    email = StringField('Email', validators=[InputRequired(), Email(
         message='Invalid email'), Length(max=50)])
-    username = StringField('username', validators=[
+    username = StringField('Username', validators=[
                            InputRequired(), Length(min=4, max=15)])
-    password = PasswordField('password', validators=[
+    password = PasswordField('Password', validators=[
                              InputRequired(), Length(min=8, max=80)])
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 
+    navbar = "position:static;"
     form = LoginForm()
 
     if form.validate_on_submit():
@@ -61,12 +62,13 @@ def login():
         return '<h1>Invalid username or password</h1>'
         # return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
 
-    return render_template('login.html', form=form)
+    return render_template('login.html', form=form, navbar=navbar)
 
 
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
 
+    navbar = "position:static;"
     form = RegisterForm()
 
     if form.validate_on_submit():
@@ -80,7 +82,7 @@ def signup():
         #  redirect after successful sign in to login page to login to new account
         return redirect(url_for('login'))
         # return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
-    return render_template('signup.html', form=form)
+    return render_template('signup.html', form=form, navbar=navbar)
 
 
 @app.route('/logout')
@@ -98,7 +100,9 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+
+    navbar = "position:static;"
+    return render_template('about.html', navbar=navbar)
 
 
 @app.route('/learningcontent', methods=['GET', 'POST'])

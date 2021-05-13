@@ -1,5 +1,5 @@
 {% import "bootstrap/wtf.html" as wtf %}
-{% extends "h-and-f.html" %}
+<!--{% extends "h-and-f.html" %}-->
 
 {% block content %}
 <div class="animated slideInLeft" style="animation-delay: 800ms; text-align: center; color: black;">
@@ -8,18 +8,33 @@
       <legend style="text-align: left">
         <em><strong>Sign Up</strong></em>
       </legend>
-      <span class="sml-info" style="position: absolute; right: 20px; bottom: 0px">Already have an account?<span
+      <span class="xs-info" style="position: absolute; right: 20px; bottom: 0px">Already have an account?<span
           style="margin-left: 10px"><a href="/login">Login</a></span></span>
     </div>
     <div class="container">
 
       <form method="POST" action="/signup">
-        <h2>Sign Up</h2>
+        <!--<h2>Sign Up</h2>-->
+        <br>
         {{ form.hidden_tag() }}
-        {{ wtf.form_field(form.username) }}
-        {{ wtf.form_field(form.email) }}
-        {{ wtf.form_field(form.password) }}
-        <button class="btn_two" type="submit">Sign Up</button>
+        <div style="text-align:left;">
+          {{ wtf.form_field(form.username) }}
+          {{ wtf.form_field(form.email) }}
+          {{ wtf.form_field(form.password) }}  
+        </div>
+        <div class="sml-info">
+          <span>Passwords must be:</span>
+          <div class="row">
+            <div class="col-md-6">
+              <ul style="padding-left:0px;">
+                <li>At least 8 characters in length</li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+            </div>
+          </div>  
+        </div>
+        <button class="btn_two" style="padding: 8px 20px;"type="submit">Sign Up</button>
       </form>
 
     </div>

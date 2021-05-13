@@ -454,15 +454,22 @@ button:focus {
   margin-top: 2rem;
   width: auto;
 }
-.sml-info {
+
+.sml-info{
+  text-align: left;
+  font-size: 1em;
+  color: rgba(98, 116, 255, 1);
+}
+
+.xs-info {
   text-align: right;
   font-size: 0.7em;
   color: rgba(98, 116, 255, 1);
 }
-.sml-info a {
+.xs-info a {
   color: rgb(127, 140, 241);
 }
-.sml-info a:hover {
+.xs-info a:hover {
   color: rgb(48, 66, 200);
 }
 #navspacing {
