@@ -14,15 +14,12 @@ header {
   position: fixed;
   font-weight: bold;
   background: transparent;
-  color: #fff;
+  color: #000;
   transition: 0.4s ease-in-out;
   z-index: 2;
 }
 header table {
   width: 100%;
-}
-#navigation {
-  width: 80%;
 }
 #magnify {
   width: 100vw;
@@ -65,10 +62,11 @@ header table {
 /* Align all elements under this id to right (about, login etc.) */
 #navigation {
   text-align: right;
+  width: 80%;
 }
 /* All elements of type <a> */
 #navigation a {
-  color: inherit;
+  color: #fff;
   text-decoration: none;
   padding: 5px 10px;
   border-bottom: 2px solid transparent;
@@ -77,7 +75,7 @@ header table {
 }
 /*  When mouse hovers over a element <a> border under the text is outlined in white */
 #navigation a:hover {
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 .navigation-white-border a:hover {
   border-bottom: 2px solid #fff !important ;
