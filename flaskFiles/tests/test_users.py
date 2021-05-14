@@ -7,7 +7,8 @@ class UserTests(unittest.TestCase):
 
   ## setUp and tearDown
   def setUp(self):
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(app.config['BASEDIR'], TEST_DB)
+    basedir = os.path.abspath(os.path.dirname(__file__))
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///'+os.path.join(basedir, TEST_DB)
     self.app = app.test_client() #setting up testing environment
     db.drop_all()
     db.create_all()
