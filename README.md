@@ -90,4 +90,4 @@ https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen
 
 [Font](https://fonts.googleapis.com/css?family=Poppins)
 
-[Homepage Image]("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1")
+[Homepage Image](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1)
