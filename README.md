@@ -67,8 +67,7 @@ To list out all tables in database
 
 ### Timeline
 
-Demo for initial design concept using AdobeXD
-https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen
+[Demo for initial design concept using AdobeXD](https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen)
 
 - Please refer to the _Projects_ tab to see what actions need to be done still
 
