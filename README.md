@@ -1,4 +1,8 @@
-# CITS3403-Project2
+# CITS3403-Project
+
+### Introduction
+
+A website teaching React 
 
 ### Setup
 
