@@ -1,30 +1,8 @@
 # CITS3403-Project2
 
-### Marked on
-
-1. the purpose of the web application, explaining both the context and the assessment mechanism used.
-2. the architecture of the web application.
-3. describe how to launch the web application.
-4. describe some unit tests for the web application, and how to run them.
-5. Include commit logs, showing contributions and review from both contributing students
-
-Creating a webpage to teach others how to use React
-
-1. The website should have at least six pages/sections:
-2. one promoting the theme and purpose to users;
-3. a registration/login page for new or returning users;
-4. one or more pages presenting content to users;
-5. one or more pages for users to complete assessments;
-6. one page giving feedback to the user;
-7. one page showing aggregate results and usage statsitics
-
-Add encryption in password on flask
-
----
-
 ### Setup
 
-Note: Python needs to be installed in system with correct path
+Note: Python needs to be installed in system with correct path before going through these steps:
 
 <b>Windows</b>
 
@@ -34,10 +12,8 @@ Note: Python needs to be installed in system with correct path
 4. $env:FLASK_APP = "flaskFiles" - (provide the "FLASK_APP" environment variable)
 5. flask run
 
-6. (Keyboard) ctrl + c
-7. deactivate
-
-Note: clear cache & cookies might come in handy when debugging
+6. To get out of running the website: (Keyboard) ctrl + c
+7. To get out of virtual environment: deactivate
 
 <b>Linux</b>
 
@@ -49,7 +25,7 @@ Note: clear cache & cookies might come in handy when debugging
 
 `cd flaskFiles`
 
-3. Install neccessary libraries from
+3. Install necessary libraries from
 
 `pip3 install -r requirements.txt`
 
@@ -67,16 +43,27 @@ Note: clear cache & cookies might come in handy when debugging
 
 ---
 
-### Tutorial Structure
+### To handle databses
 
-- part1
-  - Setup
-- part 2
-  - Positioning
-- part 3
-  - Animation
-- part 4
-  - Misc
+Currently there is only one table in the database.db file named user
+
+To gain access to the database
+
+1. sqlite3 databse.db
+
+To Look at all the user data ( account information- Note passwords are hashed with sha256)
+
+1. select \* from user;
+
+To delete all user data in table
+
+1. delete from user;
+
+To list out all tables in database
+
+1. .tables
+
+---
 
 ### Timeline
 
@@ -101,6 +88,6 @@ https://xd.adobe.com/view/ef8babce-e4e8-4f4f-a5a0-3924df6be634-bad8/?fullscreen
 
 ### Resources
 
-[Imgs Human Library](https://www.humaaans.com)
+[Font](https://fonts.googleapis.com/css?family=Poppins)
 
 [Homepage Image]("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.savvymom.ca%2Fwp-content%2Fuploads%2F2020%2F01%2FOnline-Learning.jpg&f=1&nofb=1")

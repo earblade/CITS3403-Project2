@@ -48,10 +48,3 @@ function uncheck() {
     var rad = document.getElementById('rd')
     rad.removeAttribute('checked')
 }
-document.addEventListener('DOMContentLoaded', function () {
-    const main = document.querySelector('body')
-    const toggleSwitch = document.querySelector('.slider')
-    toggleSwitch.addEventListener('click', () => {
-        main.classList.toggle('dark-theme')
-    })
-})
