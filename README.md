@@ -43,7 +43,7 @@ Note: Python needs to be installed in system with correct path before going thro
 
 ---
 
-### To handle databses
+### To handle databases
 
 Currently there is only one table in the database.db file named user
 
