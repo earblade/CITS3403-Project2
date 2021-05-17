@@ -84,6 +84,11 @@ To list out all tables in database
 ### Libraries
 
 - https://animate.style/
+- https://flask.palletsprojects.com/en/1.1.x/patterns/wtforms/
+- https://www.programcreek.com/python/index/3861/werkzeug.security
+- https://flask-login.readthedocs.io/en/latest/
+- https://www.sqlalchemy.org/
+- https://pythonhosted.org/Flask-Bootstrap/
 
 ### Theme
 
