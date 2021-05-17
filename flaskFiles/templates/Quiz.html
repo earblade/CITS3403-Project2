@@ -23,7 +23,12 @@
                     <td id="navigation">
                         <a href="/about" style="color: black;">About</a>
                         <a href="/learningcontent" style="color: black;">Learning Content</a>
+                        <!-- Force redirects- if user isn't logged in the show login else show logout -->
+                        {% if current_user.is_anonymous %}
                         <a href="/login" style="color: black;">Login</a>
+                        {% else %}
+                        <a href="/logout" style="color: black;">Logout</a>
+                        {% endif %}
                     </td>
                 </tr>
             </table>

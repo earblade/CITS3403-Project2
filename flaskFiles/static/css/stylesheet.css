@@ -57,7 +57,7 @@ header table {
   color: rgb(98, 116, 255);
 }
 #logo a:hover {
-  text-decoration:none;
+  text-decoration: none;
 }
 /* Align all elements under this id to right (about, login etc.) */
 #navigation {
@@ -66,16 +66,16 @@ header table {
 }
 /* All elements of type <a> */
 #navigation a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 5px 10px;
   border-bottom: 2px solid transparent;
   margin-left: 4vw;
   transition: 0.4s ease-in-out;
 }
-/*  When mouse hovers over a element <a> border under the text is outlined in white */
+/*  When mouse hovers over a element <a> border under the text is outlined in black */
 #navigation a:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 .navigation-white-border a:hover {
   border-bottom: 2px solid #fff !important ;
@@ -454,7 +454,7 @@ button:focus {
   width: auto;
 }
 
-.sml-info{
+.sml-info {
   text-align: left;
   font-size: 1em;
   color: rgba(98, 116, 255, 1);
@@ -476,8 +476,8 @@ button:focus {
 }
 
 #page-container {
-  position:relative;
-  min-height:100vh;
+  position: relative;
+  min-height: 100vh;
 }
 
 #content-wrap {

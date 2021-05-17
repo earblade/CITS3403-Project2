@@ -22,7 +22,6 @@ class User(UserMixin, db.Model):
     username = db.Column(db.String(15), unique=True)
     email = db.Column(db.String(50), unique=True)
     password = db.Column(db.String(80))
-    # test = db.Column(db.Integer())
 
 
 @login_manager.user_loader
@@ -61,7 +60,6 @@ def login():
                 return redirect(url_for('learningcontent'))
 
         return '<h1>Invalid username or password</h1>'
-        # return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
 
     return render_template('login.html', form=form, navbar=navbar)
 
@@ -82,7 +80,6 @@ def signup():
         db.session.commit()
         #  redirect after successful sign in to login page to login to new account
         return redirect(url_for('login'))
-        # return '<h1>' + form.username.data + ' ' + form.email.data + ' ' + form.password.data + '</h1>'
     return render_template('signup.html', form=form, navbar=navbar)
 
 
