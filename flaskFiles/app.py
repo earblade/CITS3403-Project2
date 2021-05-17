@@ -7,20 +7,24 @@ from wtforms.validators import InputRequired, Email, Length
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user, current_user
 
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Thatsroughbuddy'
+# URI for database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
+# Initialize SQalchemy
 db = SQLAlchemy(app)
 bootstrap = Bootstrap(app)
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
-
+# Class respresenting a table in the database
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(15), unique=True)
-    email = db.Column(db.String(50), unique=True)
+    email = db.Column(db.String(50), unique=True) 
+    # password must be in bounds of 80 characters long
     password = db.Column(db.String(80))
 
 
@@ -28,7 +32,7 @@ class User(UserMixin, db.Model):
 def load_user(user_id):
     return User.query.get(int(user_id))
 
-
+# Login form using flaskform
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[
                            InputRequired(), Length(min=4, max=15)])
@@ -36,7 +40,7 @@ class LoginForm(FlaskForm):
                              InputRequired(), Length(min=8, max=80)])
     remember = BooleanField('Remember me')
 
-
+# Using wtf forms 
 class RegisterForm(FlaskForm):
     email = StringField('Email', validators=[InputRequired(), Email(
         message='Invalid email'), Length(max=50)])
@@ -45,13 +49,12 @@ class RegisterForm(FlaskForm):
     password = PasswordField('Password', validators=[
                              InputRequired(), Length(min=8, max=80)])
 
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
 
     navbar = "position:static;"
     form = LoginForm()
-
+    #  Checks if form has been submitted, if submitted move through if block, if it hasn't then it will pass through to render_template on the bottom
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
         if user:
@@ -60,7 +63,7 @@ def login():
                 return redirect(url_for('learningcontent'))
 
         return '<h1>Invalid username or password</h1>'
-
+    #  If current session hasn't had a form submitted with user information, then render_template for login
     return render_template('login.html', form=form, navbar=navbar)
 
 
